@@ -1,34 +1,34 @@
 <?php
 
 // Email recipient
-$EmailTo = "YOUR_EMAIL@EXAMPLE.COM";
+$EmailTo = "acting.hiro27@gmail.com";
 
 $errors = "";
 
 // Name
 if (empty($_POST["name"])) {
-    $errors = "Name is required ";
+    $errors = "名前を入力してください";
 } else {
     $name = $_POST["name"];
 }
 
 // Email
 if (empty($_POST["email"])) {
-    $errors .= "Email is required ";
+    $errors .= "メールアドレスを入力してください";
 } else {
     $email = $_POST["email"];
 }
 
 // Subject
 if (empty($_POST["subject"])) {
-    $errors = "Subject is required ";
+    $errors = "題名を入力してください";
 } else {
     $Subject = $_POST["subject"];
 }
 
 // Message
 if (empty($_POST["message"])) {
-    $errors .= "Message is required ";
+    $errors .= "メッセージ内容を入力してください";
 } else {
     $message = $_POST["message"];
 }
